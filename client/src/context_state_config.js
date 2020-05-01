@@ -12,8 +12,6 @@ import Auth from "./utils/auth";
 
 const auth = new Auth();
 
-const auth = new Auth();
-
 const ContextState = (props) => {
   /*
         Plain Reducer

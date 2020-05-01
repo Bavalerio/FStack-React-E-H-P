@@ -11,24 +11,24 @@ const Header = () => {
         Home
       </Link>
       <Link to="/profile" style={{ padding: "5px" }}>
-        Hooks Form
+        Profile
       </Link>
       <Link to="/hooksform" style={{ padding: "5px" }}>
         Hooks Form
       </Link>
-      <Link to="hookscontainer" style={{ padding: "5px" }}>
+      <Link to="/hookscontainer" style={{ padding: "5px" }}>
         Hooks Container
       </Link>
       <Link to="/privateroute" style={{ padding: "5px" }}>
         Private Route
       </Link>
-      <Link to="/post" style={{ padding: "5px" }}>
+      <Link to="/posts" style={{ padding: "5px" }}>
         Forum
       </Link>
       {!context.authState ? (
-        <button onClick={(() => context, authObj.login())}>Login</button>
+        <button onClick={() => context.authObj.login()}>Login</button>
       ) : (
-        <button onClick={(() => context, authObj.logout())}>Logout</button>
+        <button onClick={() => context.authObj.logout()}>Logout</button>
       )}
     </div>
   );

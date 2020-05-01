@@ -11,7 +11,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 
 import "../App.css";
-import "../styles/pagination.css";
+import "../styles/pagination";
 
 const Posts = (props) => {
   const context = useContext(Context);
